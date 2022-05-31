@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import Favorite from './components/pages/MyList';
 import Footer from './components/footer/Footer';
 import DetailFilm from './components/pages/DetailFilm';
+import Signin from './components/pages/Signin';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/detailfilm' element={<DetailFilm />} />
           <Route path='/favorite' element={<Favorite />} />
+          <Route path='/signin' element={<Signin />} />
         </Routes>
         <Footer />
       </Router>
