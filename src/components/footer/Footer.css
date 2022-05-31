@@ -1,0 +1,87 @@
+:root {
+    --primarycolor: black;
+    --secondcolor: whitesmoke;
+    --thirdcolor: rgb(255, 191, 0);
+}
+
+
+.footer {
+    background-color: var(--primarycolor);
+    color: var(--secondcolor);
+    height: 160px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.flogo {
+    flex: 0.2;
+    height: 140px;
+    margin-left: 50px;
+}
+
+.social {
+    margin-top: 60px;
+    margin-left: 30px;
+    
+}
+
+.social a{
+    text-decoration: none;
+    color: var(--secondcolor);
+    margin-left: 20px;
+}
+
+.relative {
+    flex: 0.5;
+    margin-left: 12rem;
+    margin-bottom: 3px;
+}
+
+.relative a {
+    text-decoration: none;
+    color: var(--secondcolor);
+}
+
+.legal a {
+    text-decoration: none;
+    color: var(--secondcolor);
+}
+
+.footer .copyright{
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+/* .footer .social{
+    flex: 0.5;
+    display: flex;
+}
+
+.footer .social .logo {
+    flex: 0.5;
+    height: 200px;
+    margin-left: 50px;
+}
+
+.footer .social .link{
+    flex: 0.7;
+    margin-top: 45px;
+}
+
+.footer .social .link li {
+    list-style: none;
+}
+
+.footer .social .link li a {
+    text-decoration: none;
+    color: var(--secondcolor);
+}
+
+.copyright {
+    
+}
+ */

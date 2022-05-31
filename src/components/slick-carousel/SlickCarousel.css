@@ -1,0 +1,48 @@
+:root {
+    --primarycolor: black;
+    --secondcolor: whitesmoke;
+    --thirdcolor: rgb(255, 191, 0);
+}
+
+.card-img {
+    height: 250px;
+    transition: all 0.25s ease-in-out;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card-img:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.slick{
+    font-size: 14px;
+}
+
+.card-title {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.card-rate {
+    color: var(--thirdcolor);
+    margin-top: 5px;
+}
+
+.card-date {
+    margin-top: 5px;
+}
+
+.star {
+    height: 14px;
+    margin-top: 1.3px;
+    float: right;
+    margin-right: 10.5rem;
+}
+
+
+

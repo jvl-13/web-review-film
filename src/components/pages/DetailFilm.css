@@ -1,0 +1,19 @@
+:root {
+    --primarycolor: black;
+    --secondcolor: whitesmoke;
+    --thirdcolor: rgb(255, 191, 0);
+}
+
+.intro {
+    display: flex;
+    height: 70vh;
+}
+
+.movie-img {
+    flex: 0.3;
+}
+
+.movie-trailer {
+    flex: 0.7;
+    width: 100%;
+}

@@ -1,0 +1,140 @@
+:root {
+    --height: 50vh;
+    --width: 100%;
+    --primarycolor: black;
+    --secondcolor: whitesmoke;
+    --thirdcolor: rgb(255, 191, 0);
+}
+
+.slider-container {
+    height: var(--height);
+    width: var(--width);
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.active {
+    display: inline-block;
+}
+
+.inactive {
+    display: none;
+}
+
+.slides {
+    height: var(--height);
+    width: var(--width);
+    display: flex;
+}
+
+.slide-image {
+    flex: 50%;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    /* z-index: 10; */
+    margin-left: 32px;
+    margin-top: 20px;
+    margin-right: 32px;
+}
+
+
+.slide-title {
+    color: var(--thirdcolor);
+    margin-bottom: 16px;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 1px;
+ }
+
+.title {
+    font-size: 16px;
+    float: left;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.slide-text,
+.slide-rate,
+.slide-date,
+.slide-categories {
+    /* top: 65%; */
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 93px;
+    letter-spacing: 0.5px;
+    color: var(--secondcolor);
+}
+
+.slide-rate {
+    color: var(--thirdcolor);
+}
+
+.overview {
+    margin-bottom: 10px;
+}
+.date {
+    margin-bottom: 10px;
+}
+
+.rate {
+    margin-bottom: 10px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1rem;
+    margin-top: -3rem;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.prev:hover,
+.next:hover {
+    color: var(--thirdcolor);
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease-in;
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.all-dots {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    top: 85%;
+    justify-content: center;
+    z-index: 200;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active-dot,
+.dot:hover {
+    background-color: rgba(225, 225, 225, 0.5);
+}
+
+
