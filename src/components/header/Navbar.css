@@ -1,9 +1,3 @@
-:root {
-    --primarycolor: black;
-    --secondcolor: whitesmoke;
-    --thirdcolor: rgb(255, 191, 0);
-}
-
 .navbar {
     background-color: black;
     color: var(--secondcolor);

@@ -1,0 +1,104 @@
+
+.movies {
+    color: whitesmoke;
+    background: linear-gradient(rgb(91,87,115), rgba(0,0,0,1));
+    overflow-y: hidden;
+    height: auto;
+    
+}
+
+.filter {
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-right: 70px;
+}
+
+.btn-filer {
+    background-color: rgb(104, 99, 130);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn-filer:hover {
+    background-color: var(--thirdcolor);
+    color: black;
+}
+
+.list-movies {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ct-movies {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.ct-img-movie {
+    height: 270px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.ct-content {
+    margin-left: 30px;
+}
+
+.ct-title-rate {
+    display: flex;
+}
+
+.ct-title {
+    color: var(--thirdcolor);
+}
+
+.ct-rate {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.ct-date, .ct-overview {
+    margin-top: 10px;
+}
+
+.ct-overview {
+    display: flex;
+}
+
+.ct-text {
+    text-align: justify;
+    margin-left: 5px;
+    letter-spacing: 0.2px;
+}
+
+.remove , .addlist{
+    background-color: rgb(104, 99, 130);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.remove:hover, .addlist:hover {
+    color: black;
+    background-color: var(--thirdcolor);
+}

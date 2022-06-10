@@ -1,19 +1,175 @@
-:root {
-    --primarycolor: black;
-    --secondcolor: whitesmoke;
-    --thirdcolor: rgb(255, 191, 0);
+.detail-film {
+    background: linear-gradient(rgb(91,87,115), rgba(0,0,0,1));
+    color: whitesmoke;
+    overflow-y: hidden;
+    height: auto;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
+.fcontainer {
+    display: flex;
+}
+
+.info {
+    margin-left: 74px;
+    margin-right: 70px;
+    margin-top: 10px;
+}
+
+.film {
+    display: flex;
+    
+}
+
+.fname {
+    color: var(--thirdcolor);
+    font-size: 28px;
+    
+}
+
+.frate {
+    margin-top: 6px;
+    margin-left: 40px;
+    font-size: 21px;
+    color: var(--thirdcolor);
+    letter-spacing: 4px;
+}
+
+.fdate {
+    margin-left: 2px;
+    margin-bottom: 7px;
+}
+
+.btn {
+    background-color: rgb(104, 99, 130);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 15px ;
+    margin-bottom: 7px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn:hover {
+    background-color: var(--thirdcolor);
+    color: black;
+}
+
+.fover {
+    margin-left: 2px;
+    margin-bottom: 10px;
+}
+
+.ftext {
+    margin-left: 90px;
+    letter-spacing: 0.2px;
+}
+
+.favorite {
+    background-color: rgb(104, 99, 130);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-right: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
 .intro {
+    margin-left: 70px;
+    margin-right: 70px;
     display: flex;
     height: 70vh;
 }
 
 .movie-img {
-    flex: 0.3;
+    width:70vh;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 3px;
 }
 
 .movie-trailer {
-    flex: 0.7;
+    width: 100%; 
+    border-radius: 3px;
+}
+
+.all-review {
+    margin-left: 70px;
+    margin-bottom: 60px;
+    margin-right: 70px;
+}
+
+.label {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.add-review {
+    min-width: 70px;
+    background-color: white;
+    color: grey;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.add-review > input {
+    border: none;
     width: 100%;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.add-review > input:focus {
+    outline: none;
+}
+
+.review-detail {
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+.info-review {
+    display: flex;
+}
+
+.author-info {
+    margin-top: 2px;
+}
+
+.author-img {
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.author {
+    font-weight: bolder;
+}
+
+.date-review {
+    font-size: 14px;
+}
+
+.detail {
+    margin-left: 60px;
+    text-align: justify;
 }

@@ -1,27 +1,14 @@
 import React from 'react'
 import './Movies.css'
-import { CategoriesList } from './CategoriesList'
 import { SliderImage } from '../slider/SliderImage'
 import Star from '../assets/images/star_16px.png'
 
-function Movies() {
-  const categoriesList = CategoriesList.map(({genre}, index) => {
-    return (
-      <button key={index} className='btn-filer' activeClassName='activebtn'>
-        {genre}
-      </button>
-    )
-  })
+function Favorite() {
 
   return (
     <div className='movies'>
-      
       <div className='filter'>
-        <h2 style={{letterSpacing: '1px', fontSize: '26px'}}>Categories</h2>
-        <div className='btns-filter'>
-          {categoriesList}
-        </div>
-
+      <h2 style={{letterSpacing: '1px', fontSize: '26px'}}>Your Favorites</h2>
         <div className='list-movies'>
           {SliderImage.map((item) => (
             <div className='ct-movies'>
@@ -39,16 +26,16 @@ function Movies() {
                   <p className='ct-over'>Overview: </p>
                   <p className='ct-text'>{item.description} </p>
                 </div>
-                <button className='addlist'>Add to favorite</button>
+
+                <button className='remove'>Remove from list</button>
               </div>
               
             </div>
           ))}
         </div>
-
       </div>
     </div>
   )
 }
 
-export default Movies
+export default Favorite
