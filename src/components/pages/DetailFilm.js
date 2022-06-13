@@ -38,9 +38,9 @@ function DetailFilm() {
       
 
       <div className='intro'>
-          <img className='movie-img' src={TheBatman} alt='movie name' />
+          <img className='movie-img' src='https://drive.google.com/uc?export=view&id=1jr5fCfKLYZ4YblpFQJZUn3Sh2OYXq22-' alt='movie name' />
           <iframe className='movie-trailer'
-          src="https://www.youtube.com/embed/mqqft2x_Aa4"
+          src="https://www.youtube.com/embed/giXco2jaZ_4"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen
