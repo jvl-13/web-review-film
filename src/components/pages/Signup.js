@@ -2,23 +2,7 @@ import React from 'react'
 import logo from '../assets/images/movieLogo.png'
 import './Signup.css'
 
-class Signup extends React.Component{
-  state={
-            email:'',
-            pwd:'',
-            cfpwd:''
-        }
-    
-        handleChange = (e) =>{
-            const {name,value} = e.target
-            this.setState({[name]:value})
-        }
-    
-        handleSubmit = (e) =>{
-            e.preventDefault()
-            this.props.isLogin(true)
-        }
-  render(){ 
+function Signup(){
     return(
         <div className='signup'>
         <div className='signup-signin'>
@@ -26,11 +10,12 @@ class Signup extends React.Component{
                 <img className='logo' src={logo} alt='logo'></img>
             </div>
             <div className='signup-form'>
-                    <form onSubmit = {this.handleSubmit}>
-                    <input type='email' name='email' placeholder='Email...' required onChange={this.handleChange}/>
-                    <input type='password' name='pwd' placeholder='Password...' required onChange={this.handleChange}/>
-                    <input type='password' name='cfpwd' placeholder='Confirm password...' required onChange={this.handleChange}/>
-                    <button onSubmit={this.handleSubmit}>Sign up</button>
+                    <form>
+                    <input className='signup-input' type='email' name='email' placeholder='Email...' />
+                    <input className='signup-input' type='text' name='username' placeholder='Username...' />
+                    <input className='signup-input' type='password' name='pwd' placeholder='Password...'/>
+                    <input className='signup-input' type='password' name='cfpwd' placeholder='Confirm password...'/>
+                    <button className='signup-button'>Sign up</button>
                 </form>
                 
             </div>
@@ -48,5 +33,4 @@ class Signup extends React.Component{
         </div>   
         )          
     }
-}
 export default Signup

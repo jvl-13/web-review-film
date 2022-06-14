@@ -2,22 +2,8 @@ import React from 'react'
 import logo from '../assets/images/movieLogo.png'
 import './Signin.css'
 
-class Signin extends React.Component{
-  state={
-            email:'',
-            pwd:''
-        }
-    
-        handleChange = (e) =>{
-            const {name,value} = e.target
-            this.setState({[name]:value})
-        }
-    
-        handleSubmit = (e) =>{
-            e.preventDefault()
-            this.props.isLogin(true)
-        }
-  render(){ 
+function Signin(){
+
     return(
         <div className='login'>
         <div className='login-signin'>
@@ -25,16 +11,16 @@ class Signin extends React.Component{
                 <img className='logo' src={logo} alt='logo'></img>
             </div>
             <div className='login-form'>
-                    <form onSubmit = {this.handleSubmit}>
-                    <input type='email' name='email' placeholder='email...' required onChange={this.handleChange}/>
-                    <input type='password' name='pwd' placeholder='password...' required onChange={this.handleChange}/>
-                    <button onSubmit={this.handleSubmit}>Login</button>
+                    <form>
+                    <input className='login-input' type='email' name='email' placeholder='email...'/>
+                    <input className='login-input' type='password' name='pwd' placeholder='password...'/>
+                    <button className='login-button'>Login</button>
                 </form>
                 
             </div>
            
             <div>
-                -----------------------  or  ----------------------<br/>
+                ------------------------------  or  -----------------------------<br/>
             </div>
             <div className='login-forgot-password'>
                 <a href={'https://www.youtube.com/watch?v=7xuKwIa5x9Q'}>Forgot password?</a>
@@ -52,7 +38,6 @@ class Signin extends React.Component{
         </div>   
         )          
     }
-}
 export default Signin
 
 
