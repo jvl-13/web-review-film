@@ -1,13 +1,77 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Movies.css'
 import { CategoriesList } from './CategoriesList'
-import { SliderImage } from '../slider/SliderImage'
 import Star from '../assets/images/star_16px.png'
+import axios from "axios"
+import { generatePath, Link, useNavigate } from 'react-router-dom'
+import moment from 'moment'
 
 function Movies() {
+  // const Movie = props => {
+  //   const [movies, setMovies] = useState([])
+  //   const [searchTitle, setSearchTitle] = useState('')
+  //   const [filter, setFilter] = useState('')
+  //   const [movieId, setMovieId] = useState('')
+  // }
+  
+  const [clicked, setClicked] = useState(false)
+  const [filter, setFilter] = useState('All')
+
+  const [movies, setMovies] = useState([])
+  // useEffect(() => {
+  //   axios.get(`http://localhost:8000/api/movie`).then((getData)=> {
+  //       setMovies(getData.data)
+  //   })
+  // })
+
+  //console.log(filter)
+
+  if(!clicked) {
+    try {
+      axios.get(`http://localhost:8000/api/movie`).then((getData)=> {
+          setMovies(getData.data)
+      })
+      setClicked(true)
+    } catch (error) {
+      
+    }
+  }
+
+
+  const handleClick = async(e, param) => {
+    e.preventDefault()
+    //console.log(e);
+    setFilter(param)
+    try {
+      if (filter === 'All') {
+        await axios.get(`http://localhost:8000/api/movie`).then((getData)=> {
+          setMovies(getData.data)
+        })
+      }
+      else {
+        await axios.get(`http://localhost:8000/api/movie?cat=${filter}`).then((getData) => {
+          setMovies(getData.data)
+        })
+      }
+    } catch (error) {
+      
+    }
+  }
+
+  const history = useNavigate()
+
+  const handleProceed = (e, id) => {
+    id && history(generatePath('/movies/detailfilm/:id', {id}))
+  }
+
   const categoriesList = CategoriesList.map(({genre}, index) => {
     return (
-      <button key={index} className='btn-filer' activeClassName='activebtn'>
+      <button 
+        onClick={(e) => handleClick(e, e.target.value)}
+        className= 'btn-filer'
+        value={genre}
+        key={index}
+      >
         {genre}
       </button>
     )
@@ -17,33 +81,30 @@ function Movies() {
     <div className='movies'>
       
       <div className='filter'>
-        <h2 style={{letterSpacing: '1px', fontSize: '26px'}}>Categories</h2>
-        <div className='btns-filter'>
+        <h2 style={{letterSpacing: '1px', fontSize: '26px', marginLeft: '24px'}}>Categories</h2>
+        <div className='btns-filter' style={{marginLeft: '24px'}}>
           {categoriesList}
         </div>
 
         <div className='list-movies'>
-          {SliderImage.map((item) => (
-            <div className='ct-movies'>
-              <img className='ct-img-movie' src={item.urls} alt={item.title} />
-              
-              <div className='ct-content'>
-                <div className='ct-title-rate'>
-                  <h2 className='ct-title'>{item.title}</h2>
-                  <p className='ct-rate'>{item.rating} <img className='ct-star' src={Star} alt='star'/> </p>
-                </div>
+          {movies.map((item) => (
+            <div class="row">
+              <div class="column">
+                {/* <Link to='detailfilm/:' style={{ textDecoration: 'none' }}>
+                  <img className='col-img' src={item.img} alt={item.tittle}/>
+                </Link> */}
+                <img onClick={(e) => handleProceed(e, item._id)} className='col-img' src={item.img} alt={item.tittle}/>
 
-                <p className='ct-date'>{item.date}</p>
-
-                <div className='ct-overview'>
-                  <p className='ct-over'>Overview: </p>
-                  <p className='ct-text'>{item.description} </p>
+                <div>
+                    <h2 onClick={(e) => handleProceed(e, item._id)} className='ct-title'>{item.tittle}</h2>
+                  
+                  <p className='ct-rate'>{item.average_vote} <img className='ct-star' src={Star} alt='star'/> </p>
+                  <p className='ct-date'>{moment(item.release_date).utc().format('MM-DD-YYYY')}</p>
                 </div>
-                <button className='addlist'>Add to favorite</button>
               </div>
-              
             </div>
           ))}
+          
         </div>
 
       </div>

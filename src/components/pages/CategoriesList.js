@@ -6,19 +6,13 @@ export const CategoriesList = [
         genre: "Action"
     },
     {
-        genre: "Adventure"
-    },
-    {
         genre: "Cartoon"
     },
     {
         genre: "Comedy"
     },
     {
-        genre: "Crime"
-    },
-    {
-        genre: "Documentary"
+        genre: "Science"
     },
     {
         genre: "Drama"
@@ -33,16 +27,25 @@ export const CategoriesList = [
         genre: "Horror"
     }, 
     
+    
     {
         genre: "Mystery"
     }, 
+    
+    {
+        genre: "Adventure"
+    },
     {
         genre: "Thriller"
     }, 
     {
         genre: "Romance"
     }, 
+     
     {
-        genre: "Science"
-    }, 
+        genre: "Crime"
+    },
+    {
+        genre: "Documentary"
+    },
 ]

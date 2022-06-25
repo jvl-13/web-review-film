@@ -1,10 +1,35 @@
+.searchpage {
+    min-height:100%;
+    color: whitesmoke;
+    background: linear-gradient(rgb(91,87,115), rgba(0,0,0,1));
+    overflow: hidden;
+
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+  
+  /* Style the images inside the grid */
+.col-img {
+    opacity: 0.8; 
+    cursor: pointer; 
+    height: 350px;
+
+}
+  
+.column img:hover {
+    opacity: 1;
+}
+
 
 .movies {
     color: whitesmoke;
     background: linear-gradient(rgb(91,87,115), rgba(0,0,0,1));
-    overflow-y: hidden;
-    height: auto;
-    
+    overflow: hidden;
+    min-height: 100%;
 }
 
 .filter {
@@ -38,6 +63,7 @@
 .list-movies {
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 15px;
 }
 
 .ct-movies {
@@ -46,8 +72,8 @@
 }
 
 .ct-img-movie {
-    height: 270px;
-    width: 250px;
+    height: 340px;
+    width: 230px;
     object-fit: cover;
 }
 
@@ -61,15 +87,46 @@
 
 .ct-title {
     color: var(--thirdcolor);
+    font-size: 16px;
+    height: 40px;
+    width: 230px;
+}
+
+.fv-title {
+    color: var(--thirdcolor);
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.ct-star {
+    height: 15px;
 }
 
 .ct-rate {
-    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.fv-rate {
+    margin-top: 3px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.fv-date { 
+    margin-top: 10px;
     font-size: 16px;
 }
 
-.ct-date, .ct-overview {
+.ct-date { 
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+.ct-overview { 
     margin-top: 10px;
+    font-size: 16px;
 }
 
 .ct-overview {
@@ -101,4 +158,4 @@
 .remove:hover, .addlist:hover {
     color: black;
     background-color: var(--thirdcolor);
-}
+} 

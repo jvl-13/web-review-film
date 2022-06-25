@@ -26,11 +26,15 @@
 .card-title {
     margin-top: 12px;
     font-size: 14px;
+    width: 170px;
+    display: inline-block;
+    height: 55px;
 }
 
 .card-rate {
     color: var(--thirdcolor);
     margin-top: 5px;
+    display: inline-block;
 }
 
 .card-date {
@@ -41,7 +45,8 @@
     height: 14px;
     margin-top: 1.3px;
     float: right;
-    margin-right: 10.5rem;
+    margin-right: 1rem;
+    margin-left: 3px;
 }
 
 
