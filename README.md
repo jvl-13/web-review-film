@@ -2,8 +2,13 @@
 This is a platform for movie buffs to share their experiences about movies by leaving comments. People can also add movies to their favorite list as a way to recall or watch them later. 
 
 # User Case Diagram
-![User case diagram](https://www.dropbox.com/scl/fi/zw4r50a7hqy2ez0r3r8da/usercase.png?rlkey=vvvgz1iv397mtvb33yws1trf9&dl=0)
+![usercase](https://github.com/jvl-13/web-review-film/assets/84391289/179ecc0b-9eda-43d5-a996-418f10c96792)
+
+# Web Interface
+Home Page
 <img width="960" alt="home (1)" src="https://github.com/jvl-13/web-review-film/assets/84391289/856dfec8-1301-446a-90c1-e5a49b541a0a">
+<img width="326" alt="homeweb" src="https://github.com/jvl-13/web-review-film/assets/84391289/9e9ad035-6d68-4107-b896-45b3e973ab5d">
+
 
 
 # Getting Started with Create React App
