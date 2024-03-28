@@ -2,7 +2,8 @@
 This is a platform for movie buffs to share their experiences about movies by leaving comments. People can also add movies to their favorite list as a way to recall or watch them later. 
 
 # User Case Diagram
-![User case diagram](https://drive.google.com/file/d/1VhucHSbmG99xpntn73o99P0rW97e-pRZ/view?usp=drive_link)
+![User case diagram](https://www.dropbox.com/scl/fi/zw4r50a7hqy2ez0r3r8da/usercase.png?rlkey=vvvgz1iv397mtvb33yws1trf9&dl=0)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
