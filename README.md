@@ -1,3 +1,8 @@
+# The Movie Reviews Website 
+This is a platform for movie buffs to share their experiences about movies by leaving comments. People can also add movies to their favorite list as a way to recall or watch them later. 
+
+# User Case Diagram
+![alt text]([http://url/to/img.png](https://drive.google.com/file/d/1VhucHSbmG99xpntn73o99P0rW97e-pRZ/view?usp=sharing))
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
