@@ -7,7 +7,13 @@ This is a platform for movie buffs to share their experiences about movies by le
 # Web Interface
 Home Page
 <img width="960" alt="home (1)" src="https://github.com/jvl-13/web-review-film/assets/84391289/856dfec8-1301-446a-90c1-e5a49b541a0a">
-<img width="326" alt="homeweb" src="https://github.com/jvl-13/web-review-film/assets/84391289/9e9ad035-6d68-4107-b896-45b3e973ab5d">
+<img width="960" alt="home1 (1)" src="https://github.com/jvl-13/web-review-film/assets/84391289/8455d5b4-e5e1-4c63-b6d5-7e316599d48f">
+
+Detail Movie Page
+<img width="960" alt="detail_film" src="https://github.com/jvl-13/web-review-film/assets/84391289/83df5216-d28c-4ddb-b1c6-891a3e22f62c">
+<img width="960" alt="detail_film1" src="https://github.com/jvl-13/web-review-film/assets/84391289/adffae45-8b77-47c3-b447-f328d45da093">
+<img width="960" alt="detail_film2" src="https://github.com/jvl-13/web-review-film/assets/84391289/fa8ad107-5cfe-475c-8622-a8a2af68f08b">
+
 
 
 
