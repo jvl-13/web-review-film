@@ -1,4 +1,4 @@
-[Dự đoán Reading 2024_IELTS NGOCBACH (1).zip](https://github.com/jvl-13/web-review-film/files/14848255/D.doan.Reading.2024_IELTS.NGOCBACH.1.zip)# The Movie Reviews Website 
+# The Movie Reviews Website 
 This is a platform for movie buffs to share their experiences about movies by leaving comments. People can also add movies to their favorite list as a way to recall or watch them later. 
 
 # Link to API
