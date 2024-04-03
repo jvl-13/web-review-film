@@ -1,11 +1,13 @@
-# The Movie Reviews Website 
+[Dự đoán Reading 2024_IELTS NGOCBACH (1).zip](https://github.com/jvl-13/web-review-film/files/14848255/D.doan.Reading.2024_IELTS.NGOCBACH.1.zip)# The Movie Reviews Website 
 This is a platform for movie buffs to share their experiences about movies by leaving comments. People can also add movies to their favorite list as a way to recall or watch them later. 
 
 # Link to API
 Link to API code: https://github.com/jvl-13/web-review-film-api
 
 # User Case Diagram
-![usercase](https://github.com/jvl-13/web-review-film/assets/84391289/179ecc0b-9eda-43d5-a996-418f10c96792)
+
+![usercasef](https://github.com/jvl-13/web-review-film/assets/84391289/f4afc907-2be8-4265-8e28-0c26ec187b16)
+
 
 # Web Interface
 Home Page
